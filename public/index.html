@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Marco Rius</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0f0f0f;
+      color: #ddd;
+      font-family: monospace;
+      font-size: 15px;
+      line-height: 1.8;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    a { color: #c8f060; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    h1 {
+      font-size: 28px;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 13px;
+      color: #666;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin: 48px 0 12px;
+    }
+
+    p { color: #aaa; margin-bottom: 12px; }
+    p strong { color: #ddd; font-weight: normal; }
+
+    nav { margin-bottom: 56px; }
+    nav a { margin-right: 24px; color: #666; font-size: 13px; }
+    nav a:hover { color: #ddd; text-decoration: none; }
+
+    .tag {
+      display: inline-block;
+      font-size: 12px;
+      color: #555;
+      border: 1px solid #222;
+      padding: 2px 10px;
+      margin: 4px 4px 0 0;
+    }
+    .progress-bar{
+      background-color:#949494;
+      width: 500px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .progress {
+      background-color: #c8f060;
+      width: 0%;
+      height: 20px;
+      transition: width 1.5s ease;
+    }
+    footer {
+      margin-top: 80px;
+      font-size: 12px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/">home</a>
+    <a href="/projects.html">projects</a>
+    <a href="/tracker.html">tracker</a>
+    <a href= "/about.html">about</a>
+    <a href = "https://github.com/Not-JM">GH</a>
+  </nav>
+
+  <h1>John Marco Rius</h1>
+  <p>Just a High School Freshman figuring everything out</p>
+
+  <h2>Currently</h2>
+  <p><strong>Building:</strong> This portfolio — learning by doing it for real.</p>
+  <p><strong>Learning:</strong> Node.js, Express, how frontends actually work.</p>
+  <p><strong>Exploring:</strong> Game dev. trying to learn and master Godot.</p>
+
+  <h2>Direction</h2>
+  <p>
+    I'm honing my skills in software engineering, game dev, and building products.
+    This site is where I log the work honestly — including the stuff that breaks.
+  </p>
+
+  <h2>Stack (so far)</h2>
+  <span class="tag">html</span>
+  <span class="tag">css</span>
+  <span class="tag">javascript</span>
+  <span class="tag">node.js</span>
+  <span class="tag">express</span>
+  <span class="tag">java</span>
+  <span class="tag">python</span>
+  <span class="tag">gdcript</span>
+
+  <h2>Goals Right Now</h2>
+  <p><strong>MASTER AP HUG</strong></p>
+  <div class = "progress-bar">
+    <div class = "progress" data-width = "100%"></div>
+  </div>
+  <p><strong>BUILD A JAVA POLY-ENGINE</strong></p>
+  <div class = "progress-bar">
+    <div class = "progress" data-width = "20%"></div>
+  </div>
+  <p><strong>MASTER GODOT USING 5 SUB-GAMES</strong></p>
+  <div class = "progress-bar">
+    <div class = "progress" data-width = "5%"></div>
+  </div>
+  <p><strong>FULLY LEARN LINEAR ALGEBRA</strong></p>
+  <div class = "progress-bar">
+    <div class = "progress" data-width = "10%"></div>
+  </div>
+  <p><strong>PUBLISH MY TRIAD SITES</strong></p>
+  <div class = "progress-bar">
+    <div class = "progress" data-width = "33%"></div>
+  </div>
+  <p><strong>SUCCESSFULLY DO 3 FREESTANDING HANDSTAND PUSHUPS</strong></p>
+  <div class = "progress-bar">
+    <div class = "progress" data-width = "15%"></div>
+  </div>
+  <p><strong>PRODUCE 3 YT VIDS</strong></p>
+  <div class = "progress-bar">
+    <div class = "progress" data-width = "33%"></div>
+  </div>
+  <footer>
+    <br>
+    built by John Marco &mdash; <a href="https://github.com/Not-JM">github</a> &mdash; <a href="malito:rius.johnmarco07@gmail.com">email</a>
+  </footer>
+  <script>
+    console.log("test ig")
+    const bars = document.querySelectorAll(".progress")
+    bars.forEach(function(bar) {
+     setTimeout(function() {
+        bar.style.width = bar.dataset.width
+     }, 100)
+    })
+  </script>
+</body>
+</html>

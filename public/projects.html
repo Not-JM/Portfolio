@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects</title>
+  <style>
+    body {
+      background: #0f0f0f;
+      color: #ddd;
+      font-family: monospace;
+      font-size: 15px;
+      line-height: 1.8;
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    a { color: #c8f060; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    
+    nav { margin-bottom: 56px; }
+    nav a { margin-right: 24px; color: #666; font-size: 13px; }
+    nav a:hover { color: #ddd; text-decoration: none; }
+
+    h1 { font-size: 32px; color: #fff; margin-bottom: 8px; }
+    p.subtitle { color: #666; font-size: 13px; margin-bottom: 48px; }
+
+    .tag-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    }
+
+    .box-grid {
+        font-size: 12px;
+        background-color: #f0f0f0;
+        border: 1px solid #00ff73;
+        padding: 10px 10px;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .project-box {
+      border: 1px solid #222;
+      background: #141414;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-box img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      display: block;
+      background: #1a1a1a;
+    }
+
+    /* placeholder when no image */
+    .project-box .img-placeholder {
+      width: 100%;
+      height: 160px;
+      background: #1a1a1a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+      font-size: 12px;
+    }
+
+    .project-info {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex: 1;
+    }
+
+    .project-name {
+      font-size: 16px;
+      color: #fff;
+    }
+
+    .project-desc {
+      font-size: 13px;
+      color: #888;
+      flex: 1;
+    }
+
+    .project-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+    }
+
+    .status {
+      font-size: 11px;
+      padding: 2px 8px;
+      border: 1px solid;
+    }
+
+    .status.wip      { color: #f0a030; border-color: #f0a030; }
+    .status.done     { color: #c8f060; border-color: #c8f060; }
+    .status.abandoned{ color: #666;    border-color: #444;    }
+
+    .project-link {
+      font-size: 12px;
+      color: #c8f060;
+    }
+
+    /* single column on small screens */
+    @media (max-width: 520px) {
+      .project-grid { grid-template-columns: 1fr; }
+    }
+    footer {
+      margin-top: 80px;
+      font-size: 12px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+     <nav>
+    <a href="/">home</a>
+    <a href="/projects.html">projects</a>
+    <a href="/tracker.html">tracker</a>
+    <a href= "/about.html">about</a>
+    <a href = "https://github.com/Not-JM">GH</a>
+    </nav>
+
+    <h1> Projects </h1>
+    <p class="subtitle"> What I have built so far</p>
+
+    <div class = "project-grid">
+    <!-- project one -->
+    <div class="project-box">
+    <img src="images/portfolio.png" alt="Portfolio site screenshot"
+       onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+    <div class="img-placeholder" style="display:none;">no image yet</div>
+    <div class="project-info">
+        <p class="project-name">Portfolio Site</p>
+        <p class="project-desc">This site. Built to log real work and learn Node.js + Express by actually using them. 
+            This project also lets me go deeper into html and css, made with Visual Studio Code.</p>
+        <div class="project-footer">
+            <span class="status wip">WIP</span>
+            <a class="project-link" href="/">view →</a>
+            </div>
+        </div>
+    </div>  
+        <!-- project two -->
+    <div class="project-box">
+      <img src = "images/brick-breaker.png" alt = "Brick Breaker"/>
+      <div class="project-info">
+        <p class="project-name">Brick Breaker</p>
+        <p class="project-desc">This is a ball collision game i made for AP CSA, 
+            where there are bricks lives and you can spawn balls when clicking, and there are infinite scaled levels,
+            made with Eclipse Java</p>
+        <div class="project-footer">
+          <span class="status done">done</span>
+          <a class="project-link" href="https://github.com/Not-JM/Brick-Breaker">view →</a>
+        </div>
+      </div>
+    </div>
+    <!-- project three -->
+    <div class="project-box">
+      <img src = "images/cracker-clicker.png" alt = "Cracker Clicker Game"/>
+      <div class="project-info">
+        <p class="project-name">Cracker Clicker</p>
+        <p class="project-desc">My first java game i made by myself,made with Eclipse Java, its just cookie clicker but cracker.</p>
+        <div class="project-footer">
+          <span class="status done">done</span>
+          <a class="project-link" href="https://github.com/Not-JM/Cracker-Clicker">view →</a>
+        </div>
+      </div>
+    </div>
+    <!-- project four -->
+    <div class="project-box">
+      <img src = "images/targert-practice.png" alt = "Target Practice Game"/>
+      <div class="project-info">
+        <p class="project-name">Target Practice</p>
+        <p class="project-desc">My first real game I made EVER, made with Scratch, its a simple shooting game with suboptimal turning
+            but its a good start with a boss fight at one point.</p>
+        <div class="project-footer">
+          <span class="status done">done</span>
+          <a class="project-link" href="https://scratch.mit.edu/projects/716521582/">view →</a>
+        </div>
+      </div>
+    </div>
+    <!-- project five -->
+    <div class="project-box">
+      <img src="images/next-game-ai.png" alt="Next Game AI screenshot"
+       onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+    <div class="img-placeholder" style="display:none;">no image yet</div>
+    <div class="project-info">
+      <p class="project-name"> Next Game AI </p>
+      <p class="project-desc">This is my first AI tool its simple but my first dive in to html, css, and javascript.</p>
+    <div class="project-footer">
+      <span class="status done">done</span>
+      <a class="project-link" href="https://next-game-ai.onrender.com">view →</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+ <footer>
+    <br>
+    built by John Marco &mdash; <a href="https://github.com/Not-JM">github</a> &mdash; <a href="malito:rius.johnmarco07@gmail.com">email</a>
+  </footer>
+</body>    
+</html>
